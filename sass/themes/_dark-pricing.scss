@@ -1,0 +1,26 @@
+@use "../utils/variables" as var;
+.dark .header__col {
+  background-color: black;
+  box-shadow: 0px 0px 10px 5px var.$white-color;
+}
+.dark .header__col:hover {
+  box-shadow: 0px 0px 10px 5px var.$primary-color;
+}
+.dark .car__btn {
+  background-color: black !important;
+}
+.dark .accordion-body {
+  background-color: black !important;
+}
+.dark .accordion-button::after {
+  background-image: url(../../asset/images/plus-black.svg);
+  transition: all 500ms;
+}
+.dark .accordion-button:not(.collapsed)::after {
+  background-image: url(../../asset/images/plus-black.svg);
+  transform: rotateZ(315deg);
+}
+.dark .accordion {
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 5px white;
+}

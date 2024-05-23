@@ -1,0 +1,86 @@
+@use "../layout/footer";
+@use "../layout/header";
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../themes/dark-contact";
+@use "../global";
+
+.center {
+  padding: 198px 0px 0px;
+}
+.main {
+  padding: 64px 0px 128px;
+}
+.in {
+  &__info {
+    max-width: 1060px;
+    padding: 60px 70px;
+    border-radius: 12px;
+    background: #f4f6fc;
+    margin: auto;
+    @media (max-width: 450px) {
+      padding: 25px;
+    }
+  }
+}
+.form-label {
+  color: #000;
+  font-family: "Poppins500";
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 6px;
+}
+.form-control {
+  padding: 18px 32px;
+  margin-bottom: 30px;
+}
+.form-control::placeholder {
+  color: #000;
+  font-family: "Poppins400";
+  font-size: 16px;
+  line-height: 28px;
+  @media (max-width: 450px) {
+    font-family: "Poppins300";
+    font-size: 14px;
+  }
+}
+.col__12 {
+  display: flex;
+  flex-direction: column;
+}
+.textarea {
+  padding: 18px 32px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width: 100%;
+  min-height: 138px;
+  margin-bottom: 32px;
+}
+.textarea::placeholder {
+  color: #000;
+  font-family: "Poppins400";
+  font-size: 16px;
+  line-height: 28px;
+  @media (max-width: 450px) {
+    font-family: "Poppins300";
+    font-size: 14px;
+  }
+}
+.btn {
+  padding: 15px 51px;
+  border-radius: 41px;
+  background: var.$text-color;
+  color: #f4f6fc;
+  font-family: "Poppins600";
+  font-size: 18px;
+  line-height: 32px; 
+  transition: all 500ms;
+  @media (max-width: 300px) {
+    padding: 15px 40px;
+  }
+}
+.btn:hover{
+    background-color: #706c6c;
+    color: #0f0d0d;
+}

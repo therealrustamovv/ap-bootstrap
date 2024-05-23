@@ -1,0 +1,23 @@
+@use "../utils/variables" as var;
+
+.dark .cols{
+    background-color: black !important;
+    box-shadow: 0px 0px 8px 3px var.$white-color;
+    border-radius: 12px 12px 0px 0px;
+}
+.dark .col-12{
+    box-shadow: 0px 0px 8px 3px var.$white-color;
+    border-radius: 0px 0px 12px 12px;
+}
+.dark .main__bottom,
+.dark .col__3{
+    background-color: black;
+}
+.dark .col__3{
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 3px var.$white-color;
+}
+.dark .header__img{
+    box-shadow: 0px 0px 15px 5px var.$white-color;
+    border-radius: 12px;
+}

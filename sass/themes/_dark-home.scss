@@ -1,0 +1,14 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+.dark .features__card {
+  background-color: var.$primary-color;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px 3px white;
+}
+.dark .project__img2,
+.dark .project__img1 {
+  border-radius: 20px;
+}
+.dark .header__btn2 {
+  box-shadow: 0px 0px 10px 5px var.$third-color;
+}

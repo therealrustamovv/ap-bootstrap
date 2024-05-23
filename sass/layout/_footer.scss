@@ -1,0 +1,66 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../utils/helpers";
+.footer {
+  padding: 104px 0px 90px;
+  background-color: var.$primary-color;
+  &__info {
+    display: flex;
+    column-gap: 142px;
+    row-gap: 30px;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    margin-bottom: 24px;
+  }
+  &__text {
+    max-width: 399px;
+    color: var.$white-color;
+    font-family: "Poppins500";
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__box {
+    width: 517px;
+    display: flex;
+    background-color: var.$third-color;
+    padding: 18px 0px 17px 37px;
+    margin-top: 86px;
+    gap: 50px;
+    @media (max-width: 550px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    color: var.$text-color;
+    font-family: "Poppins500";
+    font-size: 16px;
+    line-height: 18px;
+  }
+  &__link {
+    color: var.$text-color;
+    font-family: "Poppins400";
+    font-size: 16px;
+    line-height: 18px;
+  }
+  &__max {
+    color: var.$white-color;
+    font-family: "Poppins600";
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 14px;
+  }
+  &__icons{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    color: var.$white-color;
+    margin-top: 28px;
+  }
+  &__icon{
+    font-size: 20px;
+  }
+}

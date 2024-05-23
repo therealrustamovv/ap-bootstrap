@@ -1,0 +1,36 @@
+@use "../utils/variables" as var;
+
+.dark #backtop .top-img {
+  box-shadow: 0px 0px 10px 5px var.$white-color;
+}
+.dark #navbar.navbar-shrink {
+  box-shadow: 0px 0px 15px 6px var.$white-color;
+}
+.dark .navbar__menu{
+    box-shadow: 0px 0px 6px 3px var.$white-color;
+}
+.dark #navbar,
+.dark header,
+.dark main,
+.dark footer,
+.dark section {
+  background-color: black !important;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark a,
+.dark i {
+  color: white;
+}
+.dark .footer__box{
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 3px var.$third-color;
+}
+.dark .navbar__active{
+  color: var.$secondary-color;
+}

@@ -1,0 +1,43 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../utils/helpers";
+
+.navbar {
+  background-color: var.$primary-color !important;
+  padding: 16px 0px;
+  &__menu {
+    border: 1px solid var.$white-color;
+    color: var.$white-color;
+  }
+  &__icon {
+    font-size: 20px;
+  }
+  &__close {
+    border: 2px solid var.$white-color;
+  }
+  &__link {
+    color: #bbbbcb;
+    font-family: "Poppins500";
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__link:hover {
+    color: var.$white-color ;
+  }
+  &__active {
+    color: var.$white-color;
+  }
+  &__btn {
+    padding: 16px 48px;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    color: var.$white-color;
+    font-family: "Poppins500";
+    font-size: 16px;
+    line-height: 28px;
+  }
+  transition: all 500ms;
+}
+.offcanvas__html {
+  background-color: var.$primary-color;
+}

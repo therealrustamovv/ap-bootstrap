@@ -1,0 +1,22 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.dark .in__info {
+  background-color: black !important;
+  box-shadow: 0px 0px 15px 7px white;
+}
+.dark .in__info label {
+  color: white;
+}
+.dark .in__info input,
+.dark .in__info textarea {
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 3px white;
+}
+.dark .in__info input::placeholder,
+.dark .in__info textarea::placeholder{
+    color: white;
+}
+.dark .btn{
+    box-shadow: 0px 0px 15px 5px gray;
+}
